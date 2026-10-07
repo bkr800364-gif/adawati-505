@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#635bff">
+
+    <title>تحويل الصور إلى PDF | أدواتي</title>
+    <meta name="description" content="حوّل صورك إلى ملف PDF بسهولة، مع معاينة الصور وتنزيل المستند.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- مكتبة إنشاء ملفات PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-logo">أ</span>
+                <span>
+                    <strong>أدواتي<span class="dot">.</span></strong>
+                    <small>أدوات ذكية لحياة أسهل</small>
+                </span>
+            </a>
+
+            <a class="back-link" href="../index.html">
+                ← العودة إلى الأدوات
+            </a>
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <section class="intro">
+            <span class="eyebrow">أداة مجانية</span>
+            <h1>حوّل صورك إلى <span>PDF</span></h1>
+            <p>
+                اجمع صورك في مستند PDF واحد، عاين الصور قبل التحويل،
+                ثم نزّل ملفك بسهولة.
+            </p>
+        </section>
+
+        <section class="workspace">
+
+            <div class="upload-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>اختر الصور</h2>
+                        <p>يمكنك تحديد أكثر من صورة في الوقت نفسه.</p>
+                    </div>
+                    <span class="step-number">01</span>
+                </div>
+
+                <label class="upload-area" for="imageInput" id="uploadArea">
+                    <span class="upload-icon">↑</span>
+                    <strong>اضغط هنا لاختيار الصور</strong>
+                    <span>JPG · PNG · WEBP</span>
+                    <small>اختر الصور من جهازك</small>
+                </label>
+
+                <input type="file" id="imageInput" accept="image/jpeg,image/png,image/webp" multiple hidden>
+
+                <div class="selection-summary">
+                    <span id="imageCount">لم يتم اختيار صور</span>
+                    <button type="button" id="clearButton" class="text-button">
+                        حذف الكل
+                    </button>
+                </div>
+
+                <div id="imageList" class="image-list"></div>
+            </div>
+
+            <aside class="settings-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>إعدادات الملف</h2>
+                        <p>خصص المستند قبل إنشائه.</p>
+                    </div>
+                    <span class="step-number">02</span>
+                </div>
+
+                <label class="field-label" for="pdfName">
+                    اسم ملف PDF
+                </label>
+                <input type="text" id="pdfName" class="text-input" value="my-images" maxlength="80"
+                    placeholder="اسم الملف">
+
+                <label class="field-label" for="pageSize">
+                    حجم الصفحة
+                </label>
+                <select id="pageSize" class="text-input">
+                    <option value="a4">A4 - الحجم القياسي</option>
+                    <option value="letter">Letter - أمريكي</option>
+                    <option value="fit">بحجم الصورة</option>
+                </select>
+
+                <label class="field-label" for="orientation">
+                    اتجاه الصفحة
+                </label>
+                <select id="orientation" class="text-input">
+                    <option value="auto">تلقائي حسب الصورة</option>
+                    <option value="portrait">عمودي</option>
+                    <option value="landscape">أفقي</option>
+                </select>
+
+                <div class="info-box">
+                    <span class="info-icon">ⓘ</span>
+                    <p>
+                        تتم قراءة الصور داخل متصفحك، ويُنشأ الملف على جهازك.
+                        يلزم اتصال بالإنترنت لتحميل مكتبة PDF عند فتح الأداة.
+                    </p>
+                </div>
+
+                <button type="button" id="convertButton" class="convert-button">
+                    <span>إنشاء ملف PDF</span>
+                    <span aria-hidden="true">←</span>
+                </button>
+
+                <p id="statusMessage" class="status-message" role="status">
+                    اختر صورة واحدة على الأقل للبدء.
+                </p>
+            </aside>
+
+        </section>
+
+        <section class="help-section">
+            <h2>كيف تستخدم الأداة؟</h2>
+
+            <div class="help-grid">
+                <article class="help-card">
+                    <span>1</span>
+                    <h3>اختر صورك</h3>
+                    <p>حدد صورة واحدة أو مجموعة من الصور من جهازك.</p>
+                </article>
+
+                <article class="help-card">
+                    <span>2</span>
+                    <h3>اضبط الإعدادات</h3>
+                    <p>اختر اسم الملف وحجم الصفحة واتجاهها.</p>
+                </article>
+
+                <article class="help-card">
+                    <span>3</span>
+                    <h3>أنشئ الملف</h3>
+                    <p>اضغط على إنشاء ملف PDF لتنزيل المستند.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="../index.html">العودة إلى أدواتي</a>
+            <p>© <span id="currentYear"></span> أدواتي</p>
+        </div>
+    </footer>
+</body>
+
+</html>

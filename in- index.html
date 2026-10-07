@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#635bff">
+  <meta name="description"
+    content="أدواتي - مجموعة أدوات مجانية لمعالجة الصور وتحويل الملفات وإنجاز المهام اليومية بسهولة وأمان.">
+    <header class="site-header">
+      <div class="brand">
+        <img src="logo.png/logo (2).png" alt="شعار أدواتي" class="site-logo">
+        <h1>أدواتي</h1>
+      </div>
+    </header>
+  <meta name="keywords" content="أدوات مجانية, ضغط الصور, تحويل الصور إلى PDF, أدوات أونلاين">
+
+  <title>أدواتي | أدوات مجانية لإنجاز مهامك</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#home" aria-label="العودة إلى الرئيسية">
+        <span class="brand-mark">أ</span>
+
+        <span class="brand-copy">
+          <strong>أدواتي<span class="brand-dot">.</span></strong>
+          <small>أدوات ذكية لحياة أسهل</small>
+        </span>
+      </a>
+
+      <button class="mobile-menu-button" id="mobileMenuButton" type="button" aria-label="فتح القائمة"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a class="nav-link active" href="#home">الرئيسية</a>
+        <a class="nav-link" href="#tools">الأدوات</a>
+        <a class="nav-link" href="#about">عن الموقع</a>
+        <a class="nav-link" href="#contact">تواصل معنا</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="تفعيل الوضع الداكن" title="تغيير المظهر">
+        <span id="themeIcon">☾</span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="container hero-layout">
+
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            أدوات رقمية في مكان واحد
+          </div>
+
+          <h1>
+            أنجز مهامك اليومية
+            <span class="gradient-text">بسهولة واحترافية.</span>
+          </h1>
+
+          <p class="hero-description">
+            اكتشف مجموعة من الأدوات المجانية لمعالجة الصور،
+            وتحويل الملفات، وتسهيل أعمالك اليومية، دون خطوات معقدة.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#tools">
+              اكتشف الأدوات
+              <span aria-hidden="true">←</span>
+            </a>
+
+            <a class="button button-secondary" href="#about">
+              تعرف على الموقع
+            </a>
+          </div>
+
+          <div class="hero-benefits">
+            <span><span class="check-icon">✓</span> استخدام سهل</span>
+            <span><span class="check-icon">✓</span> أدوات مجانية</span>
+            <span><span class="check-icon">✓</span> متوافق مع الهاتف</span>
+          </div>
+
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+
+          <div class="visual-glow"></div>
+
+          <div class="visual-card visual-card-main">
+            <div class="visual-card-header">
+              <span class="window-dot dot-one"></span>
+              <span class="window-dot dot-two"></span>
+              <span class="window-dot dot-three"></span>
+              <span class="visual-card-title">مساحة العمل</span>
+            </div>
+
+            <div class="visual-preview">
+              <div class="preview-icon preview-purple">▦</div>
+              <div class="preview-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="visual-tools">
+              <div class="mini-tool">
+                <span class="mini-icon mini-blue">▧</span>
+                <span>ضغط الصور</span>
+                <span class="mini-check">✓</span>
+              </div>
+
+              <div class="mini-tool">
+                <span class="mini-icon mini-green">PDF</span>
+                <span>تحويل الملفات</span>
+                <span class="mini-check">✓</span>
+              </div>
+
+              <div class="mini-tool">
+                <span class="mini-icon mini-orange">✦</span>
+                <span>أدوات جديدة</span>
+                <span class="mini-check">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-top">
+            <span class="floating-icon">✦</span>
+            <span>بسيطة وسريعة</span>
+          </div>
+
+          <div class="floating-badge floating-bottom">
+            <span class="floating-icon green-icon">✓</span>
+            <span>تعمل من المتصفح</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-section" aria-label="البحث عن الأدوات">
+      <div class="container">
+
+        <div class="search-panel">
+          <div class="search-copy">
+            <h2>ما الأداة التي تحتاجها؟</h2>
+            <p>اكتب اسم الأداة للوصول إليها بسرعة.</p>
+          </div>
+
+          <form class="search-form" id="searchForm" role="search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+
+            <input type="search" id="toolSearch" placeholder="ابحث عن أداة..." aria-label="ابحث عن أداة"
+              autocomplete="off">
+
+            <button type="submit">بحث</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="tools-section section-padding" id="tools">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">مكتبة الأدوات</span>
+            <h2>أدوات تساعدك على إنجاز الأعمال</h2>
+            <p>
+              اختر الأداة المناسبة وابدأ العمل مباشرة.
+            </p>
+          </div>
+
+          <span class="tools-counter" id="toolsCounter">
+         جميع الأدوات متاحة
+          </span>
+        </div>
+
+        <!-- Categories -->
+        <div class="category-tabs" id="categoryTabs" aria-label="تصنيفات الأدوات">
+
+          <button class="category-button active" type="button" data-category="all" aria-pressed="true">
+            جميع الأدوات
+          </button>
+
+          <button class="category-button" type="button" data-category="images" aria-pressed="false">
+            الصور
+          </button>
+
+          <button class="category-button" type="button" data-category="documents" aria-pressed="false">
+            الملفات والمستندات
+          </button>
+
+          <button class="category-button" type="button" data-category="coming" aria-pressed="false">
+            متاحه الأن
+          </button>
+
+        </div>
+
+        <!-- Ad placeholder -->
+        <div class="ad-slot" aria-label="مساحة إعلانية">
+          <span class="ad-label">إعلان</span>
+          <p>مساحة إعلانية اختيارية لدعم استمرار الموقع</p>
+        </div>
+
+        <!-- Tool cards -->
+        <div class="tools-grid" id="toolsGrid">
+
+          <!-- Image Compressor -->
+          <article class="tool-card" data-category="images"
+            data-search="ضغط الصور تصغير حجم الصور image compressor imagepro webp jpg png">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-purple">▧</div>
+              <span class="tool-status status-ready">متاحة الآن</span>
+            </div>
+
+            <div class="tool-card-body">
+              <span class="tool-category-label">معالجة الصور</span>
+
+              <h3>ضغط الصور ImagePro</h3>
+
+              <p>
+                قلّل حجم صورك واختر الصيغة والجودة المناسبة،
+                ثم عاين النتيجة ونزّلها بسهولة.
+              </p>
+            </div>
+
+            <div class="tool-tags">
+              <span>JPG</span>
+              <span>PNG</span>
+              <span>WebP</span>
+            </div>
+
+            <a class="tool-action" href="image-compressor/index.html">
+              <span>استخدم الأداة</span>
+              <span aria-hidden="true">←</span>
+            </a>
+          </article>
+
+          <!-- Image to PDF -->
+          <article class="tool-card" data-category="documents"
+            data-search="تحويل الصور الى pdf image to pdf صور مستندات ملف pdf">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-red">PDF</div>
+              <span class="tool-status status-new">أداة جديدة</span>
+            </div>
+
+            <div class="tool-card-body">
+              <span class="tool-category-label">الملفات والمستندات</span>
+
+              <h3>تحويل الصور إلى PDF</h3>
+
+              <p>
+                اجمع صورك في ملف PDF واحد، ورتّب صفحاتك،
+                ثم احفظ المستند على جهازك.
+              </p>
+            </div>
+
+            <div class="tool-tags">
+              <span>صور متعددة</span>
+              <span>ترتيب الصفحات</span>
+            </div>
+
+            <a class="tool-action" href="image-to-pdf/index.html">
+              <span>افتح الأداة</span>
+              <span aria-hidden="true">←</span>
+            </a>
+          </article>
+
+          <!-- Coming soon -->
+          <article class="tool-card coming-card" data-category="coming" data-search="دمج pdf دمج ملفات المستندات">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-blue">⇲</div>
+              <span class="tool-status status-soon">متاحة الآن</span>
+            </div>
+
+            <div class="tool-card-body">
+              <span class="tool-category-label">الملفات والمستندات</span>
+              <h3>دمج ملفات PDF</h3>
+              <p>
+                أداة مستقبلية لجمع عدة مستندات PDF
+                في ملف واحد مرتب.
+              </p>
+              <a href="pdf-merger/index.html">دمج الملفات</a>
+            </div>
+
+            <div class="tool-tags">
+              <span>PDF</span>
+              <span>تنظيم الملفات</span>
+            </div>
+
+            <button class="tool-action disabled-action" type="button" disabled>
+              <a class="tool-action" href="pdf-merger/index.html">
+                <span>افتح الأداة</span>
+              <span aria-hidden="true">←</span>
+
+              </a>
+
+            </button>
+          </article>
+
+          <article class="tool-card coming-card" data-category="coming"
+            data-search="تغيير حجم الصور قص الصور تعديل الأبعاد">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-green">↗</div>
+              <span class="tool-status status-soon">متاحة الآن</span>
+            </div>
+
+            <div class="tool-card-body">
+              <span class="tool-category-label">معالجة الصور</span>
+              <h3>تغيير أبعاد الصور</h3>
+              <p>
+                أداة مستقبلية لتعديل أبعاد الصور
+                لتناسب المواقع والتصاميم المختلفة.
+              </p>
+            </div>
+
+            <div class="tool-tags">
+              <span>تغيير الأبعاد</span>
+              <span>صور</span>
+            </div>
+
+            <button class="tool-action disabled-action" type="button" disabled>
+              
+              <a class="tool-action" href="image-compressor/index.html">
+                <span>استخدم الأداة</span>
+              <span aria-hidden="true">←</span>
+              </a>
+            </button>
+          </article>
+
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-icon">⌕</div>
+          <h3>لم نعثر على أدوات مطابقة</h3>
+          <p>جرّب اسمًا آخر أو اختر تصنيفًا مختلفًا.</p>
+
+          <button class="button button-secondary" id="clearSearch" type="button">
+            عرض جميع الأدوات
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+
+        <div class="about-panel">
+
+          <div class="about-content">
+            <span class="section-kicker">عن أدواتي</span>
+
+            <h2>
+              أدوات مفيدة،
+              <span class="gradient-text">بخطوات أقل.</span>
+            </h2>
+
+            <p>
+              نعمل على بناء مجموعة من الأدوات الرقمية البسيطة
+              التي تساعدك على إنجاز مهامك اليومية من مكان واحد،
+              مع التركيز على سهولة الاستخدام والخصوصية.
+            </p>
+
+            <a class="button button-primary" href="#tools">
+              تصفح الأدوات
+              <span aria-hidden="true">←</span>
+            </a>
+          </div>
+
+          <div class="about-features">
+
+            <div class="feature-item">
+              <span class="feature-icon">⚡</span>
+              <div>
+                <h3>تجربة سهلة</h3>
+                <p>واجهات واضحة وخطوات بسيطة.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-icon">🔒</span>
+              <div>
+                <h3>الخصوصية</h3>
+                <p>تتم معالجة الصور داخل المتصفح في الأدوات المصممة لذلك.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <span class="feature-icon">📱</span>
+              <div>
+                <h3>متوافق مع الأجهزة</h3>
+                <p>استخدم الموقع من الهاتف أو الكمبيوتر.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container contact-inner">
+
+        <div>
+          <span class="section-kicker">تواصل معنا</span>
+          <h2>هل لديك اقتراح لأداة جديدة؟</h2>
+          <p>
+            شاركنا فكرتك للمساعدة في تطوير مجموعة أدوات أكثر فائدة.
+          </p>
+        </div>
+
+        <a class="button button-primary" href="mailto:contact@example.com?subject=اقتراح%20أداة%20جديدة">
+          اقترح أداة
+          <span aria-hidden="true">←</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">أ</span>
+        <span class="brand-copy">
+          <strong>أدواتي<span class="brand-dot">.</span></strong>
+          <small>أدوات ذكية لحياة أسهل</small>
+        </span>
+      </a>
+
+      <p>
+        © <span id="currentYear"></span> أدواتي.
+        جميع الحقوق محفوظة.
+      </p>
+
+      <a class="back-to-top" href="#home">العودة للأعلى ↑</a>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

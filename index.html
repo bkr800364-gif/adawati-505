@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#635bff">
+
+    <title>دمج ملفات PDF | أدواتي</title>
+    <meta name="description" content="اجمع ملفات PDF في مستند واحد بسهولة ومجانًا.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-logo">أ</span>
+                <span class="brand-text">
+                    <strong>أدواتي<span>.</span></strong>
+                    <small>أدوات ذكية لحياة أسهل</small>
+                </span>
+            </a>
+
+            <a href="../index.html" class="back-link">العودة إلى الأدوات ←</a>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <span class="eyebrow">أداة مجانية</span>
+            <h1>دمج ملفات <span>PDF</span></h1>
+            <p>
+                اجمع عدة مستندات PDF في ملف واحد، وتحكم في ترتيب الملفات
+                قبل الدمج، ثم نزّل النتيجة مباشرة.
+            </p>
+        </section>
+
+        <section class="workspace">
+            <div class="main-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>ملفاتك المختارة</h2>
+                        <p>أضف ملفين على الأقل لبدء الدمج.</p>
+                    </div>
+
+                    <span class="count-badge" id="fileCount">0 ملفات</span>
+                </div>
+
+                <label class="upload-area" for="pdfInput" id="uploadArea">
+                    <span class="upload-icon">＋</span>
+                    <strong>اضغط هنا لاختيار ملفات PDF</strong>
+                    <span>PDF فقط · يمكنك اختيار عدة ملفات</span>
+                    <small>أو اسحب الملفات إلى هذه المنطقة</small>
+                </label>
+
+                <input type="file" id="pdfInput" accept=".pdf,application/pdf" multiple hidden>
+
+                <div class="list-toolbar">
+                    <span>ترتيب المستندات</span>
+                    <button type="button" id="clearButton" class="clear-button">
+                        حذف الكل
+                    </button>
+                </div>
+
+                <div id="fileList" class="file-list"></div>
+
+                <div id="emptyState" class="empty-state">
+                    <span>📄</span>
+                    <p>لم تضف أي ملفات حتى الآن.</p>
+                </div>
+            </div>
+
+            <aside class="settings-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>إعدادات الدمج</h2>
+                        <p>راجع الخيارات قبل إنشاء الملف.</p>
+                    </div>
+                    <span class="settings-icon">⚙</span>
+                </div>
+
+                <label class="field-label" for="outputName">اسم الملف النهائي</label>
+                <input type="text" id="outputName" class="text-input" value="merged-document" maxlength="80"
+                    placeholder="اسم الملف">
+
+                <div class="info-box">
+                    <span>ⓘ</span>
+                    <p>
+                        يتم دمج الصفحات بالترتيب الظاهر في القائمة.
+                        استخدم السهمين للأعلى والأسفل لتغيير الترتيب.
+                    </p>
+                </div>
+
+                <div class="summary-box">
+                    <div>
+                        <span>عدد الملفات</span>
+                        <strong id="summaryFiles">0</strong>
+                    </div>
+                    <div>
+                        <span>حجم الملفات</span>
+                        <strong id="summarySize">0 كيلوبايت</strong>
+                    </div>
+                </div>
+
+                <button type="button" id="mergeButton" class="merge-button">
+                    <span id="mergeButtonText">دمج ملفات PDF</span>
+                    <span>←</span>
+                </button>
+
+                <p id="statusMessage" class="status-message" role="status" aria-live="polite">
+                    اختر ملفين أو أكثر للبدء.
+                </p>
+            </aside>
+        </section>
+
+        <section class="steps-section">
+            <h2>كيفية استخدام الأداة</h2>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span>01</span>
+                    <h3>اختر الملفات</h3>
+                    <p>حدد مستندات PDF التي تريد جمعها.</p>
+                </article>
+
+                <article class="step-card">
+                    <span>02</span>
+                    <h3>رتب المستندات</h3>
+                    <p>حدد ترتيب الملفات باستخدام الأسهم.</p>
+                </article>
+
+                <article class="step-card">
+                    <span>03</span>
+                    <h3>نزّل النتيجة</h3>
+                    <p>اضغط على الدمج للحصول على ملف واحد.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="../index.html">العودة إلى الصفحة الرئيسية</a>
+            <p>© <span id="currentYear"></span> أدواتي</p>
+        </div>
+    </footer>
+</body>
+
+</html>
